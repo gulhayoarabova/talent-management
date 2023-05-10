@@ -1,0 +1,33 @@
+.signin_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    align-items: center;
+    background: #f9f5f2;
+    height: 100vh;
+    .inner_wrapper{
+        background-color: rgb(252, 252, 252);
+        padding: 50px 40px 80px 40px;
+        border-radius: 20px;
+        box-shadow: 0px 70px 70px #EEEEEE;
+        .form_Wrapper{
+            h3{
+                letter-spacing: 0em;
+                color: #353540;
+                font-family: "Georgia";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 28px; 
+                margin-bottom: 30px;
+            }
+            p{
+                font-size: small;
+                margin-top: 15px;
+            }
+        }
+    }
+    .linkprofile{
+        color: white;
+        text-decoration: none;
+    }
+}

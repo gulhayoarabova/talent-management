@@ -1,0 +1,154 @@
+@mixin df{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+//   banner
+  .banner_wrapper {
+    padding: 80px 0px;
+    background: #f3f1f1;
+
+    .inner_wrapper {
+    flex-direction: row;
+
+      @include df;
+      column-gap: 20px;
+      .txt_wrapper {
+        .big_txt {
+          letter-spacing: 0.02em;
+          color: #353540;
+          font-family: "Georgia";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 32px;
+          display: flex;
+          flex-direction: column;
+          span {
+            color: #4b4b58;
+          }
+        }
+        p:nth-child(2) {
+          font-weight: 300;
+          font-size: 18px;
+          line-height: 34px;
+          letter-spacing: 0.02em;
+          margin: 30px 0;
+          color: #5d5d61;
+        }
+        button {
+          background: #f46752;
+          border: 1px solid rgba(29, 37, 60, 0.2);
+          border-radius: 4px;
+          outline: none;
+          padding: 15px 21px;
+          width: 300px;
+          color: #fff;
+        }
+      }
+
+      img {
+        width: 480px;
+        height: 440px;
+      }
+    }
+  }
+//   hire
+  .hire_section {
+    // background: #f9f5f2;
+
+    .inner_div{
+    @include df;
+flex-direction: column;
+row-gap: 30px;
+padding: 80px 0 80px 0;
+        h2 {
+            text-align: center;
+          }
+          input {
+            width: 90%;
+            outline: none;
+            border: 1px solid rgb(70, 72, 85);
+            padding: 10px 15px;
+            border-radius: 10px;
+
+          }
+          p {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 33px;
+            color: #353540;
+            margin: 10px 0;
+          }
+          .skills {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 20px;
+            row-gap: 30px;
+            flex-wrap: wrap;
+      
+            .skill_item {
+                cursor: pointer;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 250px;
+                height: 100px;
+                border:none;
+                background: #f8f6f6fb;
+              border-radius: 20px;
+            }
+          }
+    }
+    
+  }
+// contact
+.contact_bg{
+padding: 80px 0;
+background: #f9f5f2;
+.contact_wrapper{
+    display: flex;
+align-items: center;
+justify-content: space-between;
+    form{
+        width: 50%;
+        row-gap: 20px;
+        @include df;
+        flex-direction: column;
+        h2{
+            letter-spacing: 0.02em;
+            color: #353540;
+            font-family: "Georgia";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+        }
+        input,textarea,button{
+            outline: none;
+            background-color: transparent;
+            border:none;
+            border-bottom:  1px solid #126F85;
+                border-radius: 0%;
+                width: 50%;
+                padding: 0 0 5px 0;
+        }
+       
+        button{
+            background: #126F85;
+            padding: 10px 0;
+border-radius: 0px 5px 5px 0px;
+            color: #fff;
+            border: none;
+            outline: none;
+        }
+    }
+  
+}
+}
+}
